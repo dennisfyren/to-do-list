@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="calc-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 </head>
 <body>
     <div id="main-window">
@@ -12,31 +13,32 @@
             <p class="calc-text">CALC GOES HERE</p>
             <p>RESULTS GO HERE</p>
         </div>
+        <p class="calc-name">Calculator</p>
         <div id="keypad">
             <div class="number-pad">
                 <div class="number-group">
-                    <button>CE</button>
-                    <button>C</button>
-                    <button> </button>
-                    <button>+</button>
+                    <button class="c-button">CE</button>
+                    <button class="c-button">C</button>
+                    
+                    <button class="func-button">+</button>
                 </div>
                 <div class="number-group">
                     <button>7</button>
                     <button>8</button>
                     <button>9</button>
-                    <button>-</button>
+                    <button class="func-button">-</button>
                 </div>
                 <div class="number-group">
                     <button>4</button>
                     <button>5</button>
                     <button>6</button>
-                    <button>*</button>
+                    <button class="func-button">*</button>
                 </div>
                 <div class="number-group">
                     <button>1</button>
                     <button>2</button>
                     <button>3</button>
-                    <button>/</button>
+                    <button class="func-button">/</button>
                 </div>
                 <button class="zero-button">0</button>
             </div>
