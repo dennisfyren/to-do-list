@@ -1,0 +1,86 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 300px;
+    height: 500px;
+    margin: 50px;
+}
+
+button {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+#main-window {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    border-radius: 15px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 500px;
+    background: rgb(11, 28, 43);
+}
+
+#display-window {
+    border-top: 2px solid black;
+    border-bottom: 6px solid rgb(8, 18, 37);
+    padding: 10px;
+    padding-left: 10px;
+    width: auto;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+    background: white;
+    
+}
+
+#keypad {
+    display: flex;
+    border-top: 0px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.number-pad {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+    height: 320px;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.number-pad button, .zero-button {
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    color: rgb(11, 28, 43);
+    background: rgb(179, 178, 178);
+}
+
+.number-pad .zero-button {
+    height: 50px;
+    width: 110px;
+    flex-shrink: 0;
+}
+
+.number-group {
+    display: flex;
+    gap: 10px;
+}
+
+.calc-text {
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
