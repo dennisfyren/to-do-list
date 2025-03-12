@@ -24,7 +24,7 @@ button {
     flex-grow: 0;
     flex-shrink: 0;
     height: 500px;
-    background: rgb(42, 43, 44);
+    background: rgb(44, 42, 44);
 }
 
 #display-window {
@@ -33,13 +33,15 @@ button {
     padding-left: 10px;
     padding-top: 40px;
     width: auto;
-    height: 150px;
+    height: 100px;
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 5px;
     background: rgb(227, 233, 243);
     text-align: end;
+    flex-shrink: 0;
+    flex-grow: 0;
     
 }
 
@@ -93,10 +95,15 @@ button {
     margin-right: auto;
 }
 
-.number-pad .c-button {
+.number-pad .c-button, .number-pad .eq-button {
     background: rgb(253, 252, 249);
     width: 80px;
     flex-shrink: 1;
+}
+
+.eq-button {
+    margin-left: auto;
+    margin-right: 0px;
 }
 
 .calc-name {
