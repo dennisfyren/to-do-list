@@ -1,4 +1,59 @@
+let currentValue;
+let lastValue;
+let currentOp;
+let currentClick;
+let displayValue = '';
 
+const btnC = document.querySelector("#btn14");
+btnC.addEventListener("click", () => {
+    document.querySelector("#result").textContent = '';
+    displayValue = '';
+});
+
+const btnCe = document.querySelector("#btn15")
+btnCe.addEventListener("click", () => {
+    let inputTemp = displayValue.length;
+    displayValue = displayValue.slice(0, -1);
+    document.querySelector("#result").textContent = displayValue;
+    console.log(displayValue);
+});
+
+function operate() {
+    return lastvalue + currentOp + currentValue;
+};
+
+function btnDetect (buttonClick) {
+    currentValue = buttonClick
+    displayValue = displayValue +`${buttonClick}`;
+    document.querySelector("#result").textContent = displayValue;
+};
+
+function clear() {
+    document.querySelector("#result").textContent = '';
+    console.log("hi")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 //Button press detection.
 
     let button0 = document.getElementById(0);
@@ -126,3 +181,4 @@ function writeEqual() {
 };
 
 //Button Display
+*/
